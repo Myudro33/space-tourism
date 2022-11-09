@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 *{
   box-sizing: border-box;
   transition: all 0.5s ease 0s;
+  font-family: 'Bellefair', serif;
 }
