@@ -2,7 +2,7 @@ import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 
-const SideMenu = ({ icon, seticon }) => {
+const SideMenu = ({ icon, seticon,hash }) => {
   var styles = {
     bmCrossButton: {
       height: "24px",
@@ -50,16 +50,16 @@ const SideMenu = ({ icon, seticon }) => {
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}
       >
-        <Link className="my-5" to={"/"}>
+        <Link className={`my-5 w-full ${hash==='#/'?'border-r':''}`} to={"/"}>
           <p className="font-semibold mr-2 inline">00</p>HOME
         </Link>
-        <Link className="my-5" to={"/destinations"}>
+        <Link className={`my-5 w-full ${hash==='#/destinations'?'border-r':''}`} to={"/destinations"}>
         <p className="font-semibold mr-2 inline">01</p>DESTINATIONS
         </Link>
-        <Link className="my-5" to={"/crew"}>
+        <Link className={`my-5 w-full ${hash==='#/crew'?'border-r':''}`} to={"/crew"}>
         <p className="font-semibold mr-2 inline">02</p>CREW
         </Link>
-        <Link className="my-5" to={"/technology"}>
+        <Link className={`my-5 w-full ${hash==='#/technology'?'border-r':''}`} to={"/technology"}>
         <p className="font-semibold mr-2 inline">03</p>TECHNOLOGY
         </Link>
       </Menu>
