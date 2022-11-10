@@ -8,7 +8,9 @@ const Navbar = ({ hash,icon,seticon }) => {
   return (
     <div className="text-white absolute z-10 w-full h-20 flex justify-end dp:my-8">
       <div className="md:w-[95%] xs:w-full h-full flex items-center justify-between">
+       <Link to={'/'}>
         <img className="ml-5" src={logo} alt="logo" />
+       </Link>
         <div
             onClick={() => seticon(true)}
             className={`${icon ? "open" : ""} md:hidden`}
