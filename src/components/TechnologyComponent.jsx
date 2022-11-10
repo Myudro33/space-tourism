@@ -48,12 +48,12 @@ const TechnologyComponent = () => {
             3
           </button>
         </div>
-        <div className="dp:w-[26rem] md:w-[65%] xs:w-[90%] dp:h-56 xs:h-96 flex flex-col dp:items-start xs:items-center">
+        <div className="dp:w-[26rem] md:w-[65%] xs:w-[90%] dp:h-56 xs:h-82 flex flex-col dp:items-start xs:items-center">
           <h1 className="my-2 text-[#D0D6F9]">THE TERMINOLOGY...</h1>
           <h1 className="uppercase my-2 xs:text-3xl md:text-5xl">
             {filteredData[index].name}
           </h1>
-          <p className="dp:w-[90%] xs:w-full dp:text-start xs:text-center text-[#D0D6F9]">
+          <p className="dp:w-[90%] xs:my-4 dp:my-0 xs:w-full dp:text-start xs:text-center text-[#D0D6F9]">
             {filteredData[index].description}
           </p>
         </div>
