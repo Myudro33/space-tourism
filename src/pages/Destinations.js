@@ -23,7 +23,7 @@ const Destinations = ({ sethash }) => {
         src={bgMobile}
         alt="background"
       />
-      <h1 className="z-10 dp:w-[70%] mt-28 flex text-[white] text-2xl">
+      <h1 className="z-10 md:w-[95%] dp:w-[70%] mt-28 flex text-[white] text-2xl">
         <p className="text-[gray] mr-4 font-semibold">01</p>PICK YOUR
         DESTINATION
       </h1>
