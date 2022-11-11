@@ -24,7 +24,7 @@ const DestinationComponent = () => {
         <div className="flex dp:justify-start xs:justify-center dp:my-0 xs:my-5">
           <p
             onClick={() => setplanet("Moon")}
-            className={`hover:border-b mr-5 text-[#D0D6F9]  ${
+            className={`cursor-pointer hover:border-b mr-5 text-[#D0D6F9]  ${
               planet === "Moon" ? "border-b" : ""
             }   `}
           >
@@ -32,7 +32,7 @@ const DestinationComponent = () => {
           </p>
           <p
             onClick={() => setplanet("Mars")}
-            className={`hover:border-b mr-5 text-[#D0D6F9]  ${
+            className={`cursor-pointer hover:border-b mr-5 text-[#D0D6F9]  ${
               planet === "Mars" ? "border-b" : ""
             }   `}
           >
@@ -40,7 +40,7 @@ const DestinationComponent = () => {
           </p>
           <p
             onClick={() => setplanet("Europa")}
-            className={`hover:border-b mr-5 text-[#D0D6F9]  ${
+            className={`cursor-pointer hover:border-b mr-5 text-[#D0D6F9]  ${
               planet === "Europa" ? "border-b" : ""
             }   `}
           >
@@ -48,14 +48,16 @@ const DestinationComponent = () => {
           </p>
           <p
             onClick={() => setplanet("Titan")}
-            className={`hover:border-b mr-5 text-[#D0D6F9]  ${
+            className={`cursor-pointer hover:border-b mr-5 text-[#D0D6F9]  ${
               planet === "Titan" ? "border-b" : ""
             }   `}
           >
             TITAN
           </p>
         </div>
-        <h1 className="dp:text-9xl md:text-7xl xs:text-4xl my-2 uppercase">{filteredData[0].name}</h1>
+        <h1 className="dp:text-9xl md:text-7xl xs:text-4xl my-2 uppercase">
+          {filteredData[0].name}
+        </h1>
         <p className=" xs:text-sm md:text-lg text-[#D0D6F9] my-2 dp:text-start xs:text-center">
           {filteredData[0].description}
         </p>
